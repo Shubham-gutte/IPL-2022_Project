@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Cricket Team 2022</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="head-container">
+        <div id="head-right">
+          <img
+            src="https://images.10tv.in/wp-content/uploads/2022/01/ipl-title_V_jpg--816x480-4g.webp?sw=1366&dsz=816x480&iw=765&p=false&r=1"
+            alt="logo here"
+            id="logo"
+          />
+          <a href="./index.html">
+            <button id="home-button" class="add-button">Home</button></a
+          >
+        </div>
+        <div id="head-left">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Enter team names to search  " />
+            <div class="autocom-box"></div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+          <button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            Add Team
+          </button>
+          <button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()"
+          >
+            Add Player
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide">
+          <img
+            src="https://www.jguru.com/wp-content/uploads/2020/08/post-3-1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide first">
+          <img
+            src="https://i.pinimg.com/originals/26/8b/e0/268be02061a78cdf9ae1b83fdeb0ae44.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.thequint.com/thequint%2F2022-02%2F011631be-b48e-4f53-982c-711d76af44d9%2FSingh96_0072.jpg?auto=format%2Ccompress&fmt=webp&width=720"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://drop.ndtv.com/homepage/ndtv_sports/images/ipl.png"
+            alt=""
+          />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <h1 id="slogan">2022 ipl teams</h1>
+    <div id="first-main">
+      <div id="container_teams"></div>
+    </div>
+    <footer class="footer">
+      <div>
+        <h4>Home page</h4>
+        <br />
+        <h4>Privacy policy</h4>
+        <br />
+        <h4>About us</h4>
+        <br />
+        <h4>Contact us</h4>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
